@@ -1,6 +1,6 @@
 // METAMASK CONNECTION
 const TIMEOUT = 1000;
-const COLLECTION_NAME = 'CodeCats';
+const COLLECTION_NAME = 'Izuki_Forever';
 let editions = [];
 let dots = 1;
 
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
       onboarding.stopOnboarding();
       checkOwner(accounts[0]);
     } else {
-      onboardButton.innerText = 'Connect MetaMask!';
+      onboardButton.innerText = 'MINT NOW!';
       onboardButton.onclick = async () => {
         await window.ethereum.request({
           method: 'eth_requestAccounts',
